@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "shortcut icon" href = "foto/favicon.ico" type = "image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+        <title>Super Mario Bros - O filme</title>
+        <link rel = "stylesheet" href = "css/reset.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsivo.css">
+    </head>
+    
+    <body>
+        <div class = "fundo-video">
+            <video class = "video" autoplay loop muted>
+                <source src = "video/video-mario.mp4" type = "video/mp4">
+            </video>
+        </div>
+
+        <header class = "cabeçalho">
+            <a>
+                <img class = "logo" src ="foto/logo-chapeu-mario.png" alt = "logo chapel mario">
+            </a>
+
+            <nav>
+                <ul class = "menu">
+                    <li><a href = "#">home</a></li>
+                    <li><a href = "#">detalhes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class = "container">
+            <div class = "informações">
+                <img class = "imagem-titulo" src = "foto/titulo.png" alt = "imagem do titulo do filme">
+
+                <p class = "descrição">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>
+
+                <button class = "botao-trailer">veja o trailer</button>
+            </div>
+
+            <img class = "mario" src = "foto/super-mario-chars.png"/>
+
+            <div class = "modal">
+                <div class = "conteudo-modal">
+                    <span class = "fechar-modal">X</span>
+                    <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/cDNkh5WybZo" title="trailer oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+
+        <script src = "js/index.js"></script>
+    </body> 
+</html>
